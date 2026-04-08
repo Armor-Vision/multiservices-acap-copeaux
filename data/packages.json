@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "brand": "aCaP' Copeaux",
+    "currency": "EUR",
+    "area": "Puy-de-Dôme, Clermont-Ferrand et environs",
+    "version": 1
+  },
+  "services": [
+    {
+      "id": "diagnostic-habitat-express",
+      "type": "service",
+      "title": "Diagnostic Habitat Express",
+      "category": "conseil",
+      "tagline": "Un regard terrain rapide pour prioriser les vrais problèmes.",
+      "audience": ["particuliers", "bailleurs", "petits locaux pros"],
+      "format": "sur site",
+      "duration": "45 à 90 min",
+      "starting_price": "sur devis",
+      "cta_label": "Demander un diagnostic",
+      "highlights": [
+        "Repérage des points faibles visibles",
+        "Priorisation des actions utiles",
+        "Conseils pragmatiques sans jargon"
+      ]
+    },
+    {
+      "id": "intervention-multiservices-demi-journee",
+      "type": "service",
+      "title": "Intervention Multiservices Demi-journée",
+      "category": "intervention",
+      "tagline": "Petits travaux ciblés avec une logique de rendement et de propreté.",
+      "audience": ["particuliers", "locations", "petits professionnels"],
+      "format": "sur site",
+      "duration": "3 à 4 h",
+      "starting_price": "sur devis",
+      "cta_label": "Réserver une demi-journée",
+      "highlights": [
+        "Petites réparations",
+        "Montage / pose / réglages",
+        "Interlocuteur unique"
+      ]
+    },
+    {
+      "id": "intervention-multiservices-journee",
+      "type": "service",
+      "title": "Intervention Multiservices Journée",
+      "category": "intervention",
+      "tagline": "Pour enchaîner plusieurs tâches sans multiplier les intervenants.",
+      "audience": ["particuliers", "gites", "petits sites", "independants"],
+      "format": "sur site",
+      "duration": "1 journée",
+      "starting_price": "sur devis",
+      "cta_label": "Demander une journée complète",
+      "highlights": [
+        "Optimisation du temps de présence",
+        "Vision globale des besoins",
+        "Souplesse des tâches à traiter"
+      ]
+    },
+    {
+      "id": "pack-domotique-essentiel",
+      "type": "service",
+      "title": "Pack Domotique Essentiel",
+      "category": "domotique",
+      "tagline": "Premiers automatismes et notifications utiles, sans usine à gaz.",
+      "audience": ["particuliers", "seniors", "petits locaux"],
+      "format": "conseil + installation",
+      "duration": "sur devis",
+      "starting_price": "sur devis",
+      "cta_label": "Étudier mon installation",
+      "highlights": [
+        "Capteurs / caméras / alertes",
+        "Solutions abordables",
+        "Prise en main expliquée"
+      ]
+    },
+    {
+      "id": "assistance-numerique-utile",
+      "type": "service",
+      "title": "Assistance numérique utile",
+      "category": "numerique",
+      "tagline": "Aide concrète sur Android, fichiers, sauvegardes et usages utiles.",
+      "audience": ["particuliers", "seniors", "independants"],
+      "format": "sur site ou guidage",
+      "duration": "1 à 2 h",
+      "starting_price": "sur devis",
+      "cta_label": "Obtenir de l'aide",
+      "highlights": [
+        "Smartphone Android",
+        "Rangement / sauvegarde",
+        "Bonnes pratiques de base"
+      ]
+    }
+  ],
+  "trainings": [
+    {
+      "id": "bricolage-essentiel",
+      "type": "training",
+      "title": "Bricolage essentiel",
+      "level": "initiation",
+      "tagline": "Acquérir les bases pour éviter les erreurs courantes et gagner en autonomie.",
+      "audience": ["particuliers", "debutants"],
+      "format": "atelier",
+      "duration": "2 h à 1 journée",
+      "free_module": true,
+      "paid_access_model": "module débloqué après paiement",
+      "cta_label": "Découvrir la formation",
+      "outcomes": [
+        "Utiliser les outils de base en sécurité",
+        "Choisir les bons consommables",
+        "Réussir les petites réparations courantes"
+      ]
+    },
+    {
+      "id": "securite-domestique-prevention",
+      "type": "training",
+      "title": "Sécurité domestique et prévention",
+      "level": "initiation",
+      "tagline": "Prévenir plutôt que subir : repères simples et utiles au quotidien.",
+      "audience": ["particuliers", "familles", "locations saisonnieres"],
+      "format": "atelier",
+      "duration": "2 h à 1/2 journée",
+      "free_module": true,
+      "paid_access_model": "module débloqué après paiement",
+      "cta_label": "Voir le programme",
+      "outcomes": [
+        "Identifier les risques visibles",
+        "Mettre en place des routines simples",
+        "Réagir plus clairement en cas d'incident"
+      ]
+    },
+    {
+      "id": "android-utile-au-quotidien",
+      "type": "training",
+      "title": "Android utile au quotidien",
+      "level": "initiation",
+      "tagline": "Mieux utiliser son smartphone sans se perdre dans la technique.",
+      "audience": ["particuliers", "seniors", "independants"],
+      "format": "atelier",
+      "duration": "2 h à 1/2 journée",
+      "free_module": true,
+      "paid_access_model": "module débloqué après paiement",
+      "cta_label": "Tester le module gratuit",
+      "outcomes": [
+        "Mieux organiser son téléphone",
+        "Sauvegarder ses données",
+        "Réduire les erreurs d'usage les plus fréquentes"
+      ]
+    },
+    {
+      "id": "domotique-pratique-sans-jargon",
+      "type": "training",
+      "title": "Domotique pratique sans jargon",
+      "level": "initiation",
+      "tagline": "Comprendre ce qui est utile, réaliste et rentable chez soi.",
+      "audience": ["particuliers", "curieux", "petits locaux"],
+      "format": "atelier",
+      "duration": "2 h à 1/2 journée",
+      "free_module": true,
+      "paid_access_model": "module débloqué après paiement",
+      "cta_label": "Explorer cette formation",
+      "outcomes": [
+        "Comprendre les briques de base",
+        "Choisir selon le besoin réel",
+        "Éviter les achats inutiles"
+      ]
+    },
+    {
+      "id": "organisation-intervention-terrain",
+      "type": "training",
+      "title": "Organisation d'intervention terrain",
+      "level": "pro",
+      "tagline": "Méthode, préparation, image pro et continuité de service.",
+      "audience": ["independants", "petites equipes", "agents polyvalents"],
+      "format": "atelier ou session courte",
+      "duration": "1/2 journée à 1 journée",
+      "free_module": true,
+      "paid_access_model": "module débloqué après paiement",
+      "cta_label": "Voir l'offre pro",
+      "outcomes": [
+        "Préparer une intervention proprement",
+        "Limiter les oublis et retours inutiles",
+        "Améliorer la qualité perçue du service"
+      ]
+    }
+  ]
+}
