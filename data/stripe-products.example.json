@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "slug": "android-utile-au-quotidien",
+      "title": "Android utile au quotidien",
+      "type": "training",
+      "stripe_product_id": "prod_xxx_android_utile",
+      "stripe_price_id": "price_xxx_android_utile",
+      "mode": "payment",
+      "active": true,
+      "post_checkout_redirect": "/connexion.html"
+    },
+    {
+      "slug": "bricolage-essentiel",
+      "title": "Bricolage essentiel",
+      "type": "training",
+      "stripe_product_id": "prod_xxx_bricolage",
+      "stripe_price_id": "price_xxx_bricolage",
+      "mode": "payment",
+      "active": false,
+      "post_checkout_redirect": "/connexion.html"
+    },
+    {
+      "slug": "securite-domestique-prevention",
+      "title": "Sécurité domestique et prévention",
+      "type": "training",
+      "stripe_product_id": "prod_xxx_securite",
+      "stripe_price_id": "price_xxx_securite",
+      "mode": "payment",
+      "active": false,
+      "post_checkout_redirect": "/connexion.html"
+    }
+  ]
+}
