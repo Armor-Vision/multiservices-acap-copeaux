@@ -21,3 +21,8 @@ a{color:var(--brand);text-decoration:none}a:hover{opacity:.9}.container{max-widt
 label{font-weight:600}.success{border:1px solid #10b981;background:color-mix(in oklab,#10b981,transparent 85%);padding:10px;border-radius:8px}.error{border:1px solid #ef4444;background:color-mix(in oklab,#ef4444,transparent 85%);padding:10px;border-radius:8px}
 .socials{display:flex;gap:10px;align-items:center;margin-top:8px}
 .socials img{width:22px;height:22px;opacity:.9}
+.cards a.card{
+  display:block;
+  color:var(--text);
+  text-decoration:none;
+}
