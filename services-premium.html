@@ -1,12 +1,16 @@
-<!doctype html><html lang="fr" data-theme="light"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Services Premium — aCaP' Copeaux</title>
-<meta name="description" content="Présentation premium des services aCaP' Copeaux : multiservices, nettoyage, domotique utile, assistance numérique et interventions terrain autour de Clermont-Ferrand.">
-<link rel="preload" href="assets/css/style.css" as="style">
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/main.js"></script>
-<link rel="icon" href="assets/images/favicon.png" type="image/png">
-</head><body>
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services multiservices premium — aCaP' Copeaux</title>
+  <meta name="description" content="Services multiservices autour de Clermont-Ferrand : petits travaux, remise en état, domotique utile, assistance numérique et interventions terrain claires, soignées et adaptées au besoin réel.">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+</head>
+<body>
 <header class="topbar">
   <a class="brand" href="index.html">
     <img src="assets/images/logo-mark.png" alt="Logo aCaP' Copeaux" class="brand-logo">
@@ -14,9 +18,14 @@
   </a>
   <button class="menu-toggle" aria-label="Ouvrir le menu" id="menuToggle">☰</button>
   <nav id="nav" class="nav">
-    <a href="services-premium.html" aria-current="page">Services premium</a>
-    <a href="formations-premium.html">Formations premium</a>
+    <a href="index.html">Accueil</a>
+    <a href="services-premium.html" aria-current="page">Services</a>
+    <a href="formations-premium.html">Formations</a>
     <a href="packages.html">Packages</a>
+    <a href="module-decouverte-android.html">Module gratuit</a>
+    <a href="connexion-supabase.html">Connexion</a>
+    <a href="espace-client-pilote.html">Espace client</a>
+    <a href="avis.html">Avis</a>
     <a href="contact.html">Contact</a>
     <button id="themeSwitch" class="theme-switch" aria-label="Changer de thème">◐</button>
   </nav>
@@ -24,99 +33,224 @@
 
 <section class="container hero">
   <span class="badge">Services terrain</span>
-  <h1>Un seul interlocuteur, plusieurs compétences, un cadre plus clair</h1>
-  <p>Cette version premium présente les interventions non comme une liste floue de tâches, mais comme des offres plus lisibles, avec cas d'usage, bénéfices, limites et logique de devis.</p>
+  <h1>Des interventions claires, utiles et soignées</h1>
+  <p>
+    aCaP' Copeaux propose des prestations multiservices pensées pour les besoins concrets du quotidien :
+    petits travaux, remise en état, domotique utile, assistance numérique et accompagnement terrain.
+    L'objectif est simple : proposer une solution proportionnée, lisible et propre, sans discours inutile.
+  </p>
   <div class="cta">
     <a class="btn primary" href="contact.html">Demander un devis</a>
-    <a class="btn" href="packages.html">Voir les packages</a>
+    <a class="btn" href="#offres">Voir les services</a>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Pourquoi cette présentation fonctionne mieux</h2>
+  <h2>Pourquoi faire appel à aCaP' Copeaux</h2>
   <div class="grid cards">
-    <article class="card"><h3>Plus compréhensible</h3><p>Le client comprend ce qui relève du dépannage, du conseil, de la remise en état ou de l'accompagnement.</p></article>
-    <article class="card"><h3>Plus crédible</h3><p>On ne vend pas “de tout”. On vend des cadres d'intervention cohérents, avec des objectifs et des limites.</p></article>
-    <article class="card"><h3>Plus rentable</h3><p>La logique de demi-journée, journée ou pack évite de sous-vendre les déplacements et le temps terrain.</p></article>
+    <article class="card">
+      <h3>Un interlocuteur unique</h3>
+      <p>Pratique pour regrouper plusieurs petites tâches cohérentes sans multiplier les intervenants.</p>
+    </article>
+    <article class="card">
+      <h3>Une approche concrète</h3>
+      <p>Le besoin est cadré simplement : ce qui est utile, faisable, prioritaire et adapté à la situation.</p>
+    </article>
+    <article class="card">
+      <h3>Une logique de terrain</h3>
+      <p>Le service est pensé pour être compréhensible, proprement exécuté et réaliste dans son niveau d'intervention.</p>
+    </article>
   </div>
 </section>
 
-<section class="container section">
-  <h2>Offres principales</h2>
+<section class="container section" id="offres">
+  <h2>Services proposés</h2>
   <div class="grid cards">
-    <article class="card">
-      <span class="badge">Diagnostic</span>
-      <h3>Diagnostic Habitat Express</h3>
-      <p>Visite courte pour identifier les points faibles visibles, hiérarchiser les priorités et éviter les mauvais arbitrages.</p>
-      <p><strong>Idéal pour :</strong> préparer des travaux, trier les urgences, gagner du temps.</p>
-      <p><strong>Livrable :</strong> recommandations claires, priorités, premières pistes d'action.</p>
-    </article>
-    <article class="card">
+    <a class="card" href="#diagnostic">
+      <span class="badge">Conseil</span>
+      <h3>Diagnostic habitat express</h3>
+      <p>Faire le point rapidement sur une situation, prioriser et éviter les mauvais arbitrages.</p>
+    </a>
+    <a class="card" href="#multiservices">
       <span class="badge">Intervention</span>
-      <h3>Demi-journée multiservices</h3>
-      <p>Créneau court pour traiter plusieurs petites tâches ciblées avec logique de rendement, de propreté et de clarté.</p>
-      <p><strong>Cas typiques :</strong> montage, réglages, petites réparations, pose simple, reprises.</p>
-      <p><strong>Limite :</strong> non adapté aux gros chantiers ou aux travaux réglementés lourds.</p>
-    </article>
-    <article class="card">
-      <span class="badge">Intervention</span>
-      <h3>Journée multiservices</h3>
-      <p>Format pertinent lorsqu'il faut enchaîner plusieurs interventions cohérentes sans multiplier les prestataires.</p>
-      <p><strong>Avantage :</strong> meilleure continuité, moins de pertes de temps, vision plus globale.</p>
-      <p><strong>Public :</strong> particuliers, locations, petites structures, gîtes, locaux simples.</p>
-    </article>
-    <article class="card">
-      <span class="badge">Nettoyage</span>
-      <h3>Remise en état ciblée</h3>
-      <p>Nettoyage de reprise, fin de chantier légère, vitres, extérieurs proches, remise au propre avant usage ou relocation.</p>
-      <p><strong>Objectif :</strong> remettre un espace dans un état présentable et exploitable.</p>
-      <p><strong>Approche :</strong> rigueur, méthode, zones prioritaires.</p>
-    </article>
-    <article class="card">
-      <span class="badge">Domotique</span>
-      <h3>Pack Domotique Essentiel</h3>
-      <p>Premiers automatismes utiles, capteurs, alertes smartphone, solutions simples et compréhensibles.</p>
-      <p><strong>Objectif :</strong> utilité réelle, pas gadget ni suréquipement.</p>
-      <p><strong>Inclus :</strong> conseil, choix, installation de base, prise en main.</p>
-    </article>
-    <article class="card">
-      <span class="badge">Numérique</span>
+      <h3>Intervention multiservices</h3>
+      <p>Petits travaux, ajustements, montage, pose simple, réparations ciblées et améliorations pratiques.</p>
+    </a>
+    <a class="card" href="#nettoyage">
+      <span class="badge">Remise en état</span>
+      <h3>Nettoyage et remise au propre</h3>
+      <p>Remise en état ciblée, reprise de fin de chantier légère, vitres, zones prioritaires et espaces à réorganiser.</p>
+    </a>
+    <a class="card" href="#domotique">
+      <span class="badge">Habitat utile</span>
+      <h3>Domotique et sécurité de base</h3>
+      <p>Solutions simples, compréhensibles et réellement utiles pour le quotidien.</p>
+    </a>
+    <a class="card" href="#numerique">
+      <span class="badge">Accompagnement</span>
       <h3>Assistance numérique utile</h3>
-      <p>Aide concrète sur Android, fichiers, sauvegardes, rangement, confidentialité de base et usages du quotidien.</p>
-      <p><strong>Public :</strong> particuliers, indépendants, profils peu à l'aise avec le numérique.</p>
-      <p><strong>Promesse :</strong> repartir avec quelque chose de plus clair et plus fonctionnel.</p>
+      <p>Aide concrète sur Android, rangement, sauvegardes, bonnes pratiques et usages pratiques.</p>
+    </a>
+  </div>
+</section>
+
+<section class="container section" id="diagnostic">
+  <div class="card">
+    <span class="badge">Diagnostic</span>
+    <h2>Diagnostic habitat express</h2>
+    <p>
+      Un format court pour regarder une situation de manière claire : défauts visibles, points de vigilance,
+      priorités, première logique d'action et pistes réalistes.
+    </p>
+    <p><strong>Idéal pour :</strong> préparer des travaux, trier les urgences, comprendre par quoi commencer.</p>
+    <p><strong>Convient à :</strong> particuliers, bailleurs, petites locations, locaux simples.</p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Demander un diagnostic</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="multiservices">
+  <div class="card">
+    <span class="badge">Intervention</span>
+    <h2>Intervention multiservices</h2>
+    <p>
+      Pour les besoins concrets du quotidien : petits travaux, réparations simples, montage, ajustements,
+      reprises, installation légère et amélioration pratique d'un espace.
+    </p>
+    <p><strong>Exemples :</strong> pose d'étagères, petits assemblages, ajustements de mobilier, reprises simples, perçage, vissage, finitions légères, organisation pratique d'un espace.</p>
+    <p><strong>Important :</strong> le service est pensé pour des interventions cohérentes et proportionnées. Les travaux lourds, techniques ou réglementés sortant du cadre normal doivent être orientés vers le bon métier.</p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Demander une intervention</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="nettoyage">
+  <div class="card">
+    <span class="badge">Remise en état</span>
+    <h2>Nettoyage et remise au propre</h2>
+    <p>
+      Une approche orientée résultat : remise en état ciblée, reprise de zones à remettre en service,
+      nettoyage utile avant occupation, relocation, remise en ordre ou fin de petits travaux.
+    </p>
+    <p><strong>Exemples :</strong> vitres, surfaces, zones prioritaires, petits extérieurs, remise au propre avant usage, reprise visuelle d'un espace.</p>
+    <p><strong>Objectif :</strong> rendre l'espace plus propre, plus lisible, plus présentable et plus exploitable.</p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Demander une remise en état</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="domotique">
+  <div class="card">
+    <span class="badge">Domotique</span>
+    <h2>Domotique et sécurité de base</h2>
+    <p>
+      Des solutions simples et utiles pour améliorer le confort, la vigilance ou les alertes du quotidien,
+      sans basculer dans une installation lourde ou incompréhensible.
+    </p>
+    <p><strong>Exemples :</strong> capteurs, alertes smartphone, caméras simples, premiers automatismes, logique d'usage, aide au choix et à la prise en main.</p>
+    <p><strong>Approche :</strong> aller vers l'utile, pas vers le gadget.</p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Étudier mon besoin</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="numerique">
+  <div class="card">
+    <span class="badge">Numérique</span>
+    <h2>Assistance numérique utile</h2>
+    <p>
+      Une aide simple et concrète pour mieux utiliser son téléphone, ses fichiers et ses outils du quotidien.
+      L'objectif n'est pas de compliquer, mais de rendre les usages plus fluides et plus clairs.
+    </p>
+    <p><strong>Exemples :</strong> Android, rangement, sauvegardes, tri, usages utiles, habitudes simples, repères de base.</p>
+    <p><strong>Pour qui :</strong> particuliers, seniors, indépendants, personnes qui veulent reprendre la main sur un usage devenu flou ou désordonné.</p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Demander un accompagnement</a>
+      <a class="btn" href="module-decouverte-android.html">Voir le module gratuit Android</a>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Comment se déroule une demande</h2>
+  <div class="grid cards">
+    <article class="card">
+      <h3>1. Qualification</h3>
+      <p>Le besoin est expliqué clairement : contexte, urgence, contraintes, objectif recherché.</p>
+    </article>
+    <article class="card">
+      <h3>2. Cadrage</h3>
+      <p>Le cadre est posé : ce qui est faisable, utile, prioritaire et ce qui relève d'un autre niveau d'intervention.</p>
+    </article>
+    <article class="card">
+      <h3>3. Intervention</h3>
+      <p>Le service est réalisé avec une logique de lisibilité, de propreté et de cohérence.</p>
+    </article>
+    <article class="card">
+      <h3>4. Suite éventuelle</h3>
+      <p>Des conseils, réserves ou pistes complémentaires peuvent être donnés si cela a du sens.</p>
     </article>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Méthode d'intervention</h2>
+  <h2>Questions fréquentes</h2>
   <div class="grid cards">
-    <article class="card"><h3>1. Qualification</h3><p>Tu expliques le besoin, les contraintes, l'urgence, l'environnement et ce qui a déjà été tenté.</p></article>
-    <article class="card"><h3>2. Cadrage</h3><p>Tri entre ce qui est faisable, utile, prioritaire, et ce qui relèvera d'un autre métier ou d'un autre budget.</p></article>
-    <article class="card"><h3>3. Intervention</h3><p>Traitement des actions retenues avec logique de résultat, de propreté et d'explication.</p></article>
-    <article class="card"><h3>4. Suite</h3><p>Conseils, réserves éventuelles, prochaines étapes et besoin complémentaire si pertinent.</p></article>
+    <article class="card">
+      <h3>Pouvez-vous tout faire ?</h3>
+      <p>Non. L'objectif est justement de rester clair sur le cadre d'intervention et de ne pas promettre l'inadapté.</p>
+    </article>
+    <article class="card">
+      <h3>Est-ce réservé aux gros chantiers ?</h3>
+      <p>Non. Le service est particulièrement pertinent pour les besoins simples, ciblés et cohérents.</p>
+    </article>
+    <article class="card">
+      <h3>Peut-on regrouper plusieurs besoins ?</h3>
+      <p>Oui, lorsque les tâches restent compatibles dans un même cadre d'intervention.</p>
+    </article>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Points de confiance</h2>
   <div class="card">
-    <ul>
-      <li>Interlocuteur unique</li>
-      <li>Explications claires</li>
-      <li>Approche pragmatique et pédagogique</li>
-      <li>Recherche d'une solution proportionnée au besoin réel</li>
-      <li>Orientation terrain plus que discours marketing</li>
-    </ul>
+    <h2>Besoin d'un échange clair avant de décider ?</h2>
+    <p>
+      Une demande bien posée permet souvent de gagner du temps, d'éviter les mauvaises dépenses
+      et d'aller plus vite vers une solution cohérente.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Demander un devis</a>
+      <a class="btn" href="packages.html">Voir les packages</a>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="footer-grid">
-    <div><h4>aCaP' Copeaux</h4><p>Multiservices bâtiment, nettoyage, domotique de base et formations.</p></div>
-    <div><h5>Contact</h5><p>Tél : <a href="tel:+33781353645">+33781353645</a><br>Email : <a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a></p></div>
-    <div><h5>Action</h5><p><a href="contact.html">Demander un devis</a> · <a href="packages.html">Voir les packages</a></p></div>
+    <div>
+      <h4>aCaP' Copeaux</h4>
+      <p>Multiservices, remise en état, domotique utile, assistance numérique et accompagnement terrain.</p>
+    </div>
+    <div>
+      <h5>Navigation</h5>
+      <p>
+        <a href="formations-premium.html">Formations</a><br>
+        <a href="packages.html">Packages</a><br>
+        <a href="avis.html">Avis</a>
+      </p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p>
+        <a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a><br>
+        <a href="tel:+33781353645">+33781353645</a>
+      </p>
+    </div>
   </div>
 </footer>
-</body></html>
+</body>
+</html>
