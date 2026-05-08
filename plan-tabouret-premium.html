@@ -1,12 +1,75 @@
-<!doctype html><html lang="fr" data-theme="light"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plan tabouret premium — aCaP' Copeaux</title>
-<meta name="description" content="Version premium du plan de tabouret simple : plan enrichi, étapes détaillées, checklist, erreurs fréquentes, matériel et logique de fabrication débutant.">
-<link rel="preload" href="assets/css/style.css" as="style">
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/main.js"></script>
-<link rel="icon" href="assets/images/favicon.png" type="image/png">
-</head><body>
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan tabouret premium — formation complète</title>
+  <meta name="description" content="Formation complète pour fabriquer un tabouret simple en bois : plan détaillé, matériel, étapes exactes, repères de contrôle, erreurs à éviter, finitions et guide photo.">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+  <style>
+    .data-table{
+      width:100%;
+      border-collapse:collapse;
+      margin:16px 0 24px;
+      font-size:.96rem;
+    }
+    .data-table th,
+    .data-table td{
+      border:1px solid rgba(255,255,255,.12);
+      padding:10px 12px;
+      vertical-align:top;
+      text-align:left;
+    }
+    .data-table th{
+      font-weight:700;
+    }
+    .note-box,
+    .warn-box,
+    .success-box{
+      padding:16px;
+      border-radius:14px;
+      margin:16px 0;
+    }
+    .note-box{ background:rgba(255,255,255,.05); }
+    .warn-box{ background:rgba(255,120,120,.10); }
+    .success-box{ background:rgba(120,255,160,.10); }
+    .step-title{
+      margin-bottom:8px;
+    }
+    .checklist li,
+    .step-list li{
+      margin-bottom:8px;
+    }
+    .photo-slot{
+      margin-top:14px;
+      padding:14px;
+      border-radius:12px;
+      background:rgba(255,255,255,.04);
+      font-size:.95rem;
+    }
+    .kpi-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:16px;
+    }
+    .kpi{
+      padding:16px;
+      border-radius:14px;
+      background:rgba(255,255,255,.05);
+    }
+    .kpi strong{
+      display:block;
+      font-size:1.2rem;
+      margin-bottom:6px;
+    }
+  </style>
+</head>
+<body>
+
 <header class="topbar">
   <a class="brand" href="index.html">
     <img src="assets/images/logo-mark.png" alt="Logo aCaP' Copeaux" class="brand-logo">
@@ -15,7 +78,9 @@
   <button class="menu-toggle" aria-label="Ouvrir le menu" id="menuToggle">☰</button>
   <nav id="nav" class="nav">
     <a href="index.html">Accueil</a>
+    <a href="formations-premium.html">Formations</a>
     <a href="formation-bricolage-essentiel.html">Bricolage essentiel</a>
+    <a href="module-gratuit-bricolage-essentiel.html">Module gratuit</a>
     <a href="plan-tabouret-simple.html">Plan simple</a>
     <a href="plan-tabouret-premium.html" aria-current="page">Plan premium</a>
     <a href="offres-tarifs-bricolage.html">Offres & tarifs</a>
@@ -25,66 +90,674 @@
 </header>
 
 <section class="container hero">
-  <span class="badge">Version enrichie</span>
-  <h1>Plan tabouret premium</h1>
-  <p>Une version plus détaillée et plus guidée du projet tabouret simple, pensée pour les débutants qui veulent un support plus solide, plus rassurant et plus autonome.</p>
+  <span class="badge">Formation-produit complète</span>
+  <h1>Fabriquer un tabouret simple en bois</h1>
+  <p>
+    Un guide pas à pas, pensé pour les débutants sérieux, avec dimensions précises, logique de fabrication,
+    contrôles intermédiaires, erreurs à éviter et recommandations de finition.  
+    L’objectif n’est pas seulement de “faire un tabouret”, mais de comprendre comment fabriquer proprement un premier objet stable et cohérent.
+  </p>
   <div class="cta">
-    <a class="btn primary" href="contact.html">Demander ce produit</a>
-    <a class="btn" href="formation-bricolage-essentiel.html">Voir la formation associée</a>
+    <a class="btn primary" href="#contenu">Voir le contenu complet</a>
+    <a class="btn" href="contact.html">Demander ce produit</a>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Ce que la version premium ajoute</h2>
-  <div class="grid cards">
-    <article class="card"><h3>Plan plus guidé</h3><p>Découpage plus explicite des étapes, de la préparation au contrôle final.</p></article>
-    <article class="card"><h3>Checklist détaillée</h3><p>Avant démarrage, pendant assemblage, après contrôle.</p></article>
-    <article class="card"><h3>Erreurs fréquentes</h3><p>Liste claire des pièges débutants avec logique de correction.</p></article>
-    <article class="card"><h3>Matériel raisonné</h3><p>Ce qu'il faut vraiment, ce qui est optionnel et ce qu'il vaut mieux éviter.</p></article>
+  <div class="kpi-grid">
+    <div class="kpi">
+      <strong>Niveau</strong>
+      Débutant à faux débutant
+    </div>
+    <div class="kpi">
+      <strong>Durée estimée</strong>
+      2 h 30 à 4 h
+    </div>
+    <div class="kpi">
+      <strong>Format</strong>
+      Guide premium pas à pas
+    </div>
+    <div class="kpi">
+      <strong>Résultat</strong>
+      1 tabouret simple d’appoint
+    </div>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Contenu du pack premium</h2>
+  <h2>Ce que vous allez fabriquer</h2>
   <div class="card">
-    <ul>
-      <li>Plan coté simplifié et lisible</li>
-      <li>Liste complète des pièces</li>
-      <li>Liste du bois recommandé</li>
-      <li>Liste des outils minimum</li>
-      <li>Liste de la quincaillerie</li>
-      <li>Étapes de fabrication détaillées</li>
-      <li>Checklist de contrôle</li>
-      <li>Erreurs fréquentes et points de vigilance</li>
-      <li>Conseils de finition de base</li>
+    <p>
+      Le modèle retenu est un <strong>tabouret carré simple</strong>, avec :
+    </p>
+    <ul class="checklist">
+      <li><strong>Hauteur finie :</strong> environ 45 cm</li>
+      <li><strong>Assise :</strong> environ 30 x 30 cm</li>
+      <li><strong>Structure :</strong> 4 pieds, 4 traverses hautes, 4 traverses basses, 1 assise</li>
+      <li><strong>Montage :</strong> vissé + collé</li>
+      <li><strong>Style :</strong> simple, propre, fonctionnel</li>
     </ul>
+
+    <div class="warn-box">
+      <strong>Important :</strong> ce modèle est pensé comme un <strong>tabouret d’appoint pédagogique</strong>.  
+      Il est adapté à un premier projet sérieux, mais ne remplace pas une conception professionnelle testée en laboratoire ou un assemblage d’ébénisterie haut de gamme.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 01 :</strong> vue du tabouret terminé, en situation, lumière propre, fond sobre.
+    </div>
+  </div>
+</section>
+
+<section class="container section" id="contenu">
+  <h2>Contenu du pack premium</h2>
+  <div class="grid cards">
+    <article class="card">
+      <h3>Plan guidé</h3>
+      <p>Dimensions, logique de structure, liste de débit et ordre de montage.</p>
+    </article>
+    <article class="card">
+      <h3>Instructions exactes</h3>
+      <p>Étapes détaillées, repères de contrôle et séquence logique de fabrication.</p>
+    </article>
+    <article class="card">
+      <h3>Guide photo</h3>
+      <p>Liste des visuels à produire ou à intégrer pour rendre le support plus pédagogique.</p>
+    </article>
+    <article class="card">
+      <h3>Erreurs à éviter</h3>
+      <p>Pièges de débutant, défauts fréquents et corrections recommandées.</p>
+    </article>
   </div>
 </section>
 
 <section class="container section">
-  <h2>Pour qui</h2>
+  <h2>Matériel nécessaire</h2>
+
+  <h3>Bois recommandé</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Élément</th>
+        <th>Quantité</th>
+        <th>Section / épaisseur</th>
+        <th>Longueur / dimension</th>
+        <th>Remarque</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pieds</td>
+        <td>4</td>
+        <td>38 x 38 mm</td>
+        <td>432 mm</td>
+        <td>Donne ~450 mm de hauteur finale avec assise de 18 mm</td>
+      </tr>
+      <tr>
+        <td>Traverses hautes</td>
+        <td>4</td>
+        <td>70 x 18 mm</td>
+        <td>200 mm</td>
+        <td>Cadre supérieur sous l’assise</td>
+      </tr>
+      <tr>
+        <td>Traverses basses</td>
+        <td>4</td>
+        <td>38 x 18 mm</td>
+        <td>200 mm</td>
+        <td>Renfort de stabilité</td>
+      </tr>
+      <tr>
+        <td>Assise</td>
+        <td>1</td>
+        <td>18 mm</td>
+        <td>300 x 300 mm</td>
+        <td>Panneau massif lamellé-collé ou équivalent</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Quincaillerie</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Quantité conseillée</th>
+        <th>Usage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vis à bois 4 x 50 mm</td>
+        <td>32</td>
+        <td>Assemblage des traverses sur les pieds</td>
+      </tr>
+      <tr>
+        <td>Vis à bois 4 x 35 mm</td>
+        <td>8</td>
+        <td>Fixation de l’assise sur les traverses hautes</td>
+      </tr>
+      <tr>
+        <td>Colle bois</td>
+        <td>1 flacon</td>
+        <td>Renforcer les assemblages</td>
+      </tr>
+      <tr>
+        <td>Patins feutre</td>
+        <td>4</td>
+        <td>Option recommandée pour la finition</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Outils minimum</h3>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Outil</th>
+        <th>Utilité</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mètre ruban</td>
+        <td>Mesure et contrôle</td>
+      </tr>
+      <tr>
+        <td>Équerre</td>
+        <td>Traçage et contrôle d’angle</td>
+      </tr>
+      <tr>
+        <td>Crayon</td>
+        <td>Repérage propre</td>
+      </tr>
+      <tr>
+        <td>Scie manuelle ou scie sauteuse</td>
+        <td>Découpe si les pièces ne sont pas déjà débitées</td>
+      </tr>
+      <tr>
+        <td>Perceuse-visseuse</td>
+        <td>Pré-perçage et vissage</td>
+      </tr>
+      <tr>
+        <td>Foret bois 3 mm</td>
+        <td>Pré-perçage principal</td>
+      </tr>
+      <tr>
+        <td>Foret bois 4 mm</td>
+        <td>Pré-perçage de passage selon les cas</td>
+      </tr>
+      <tr>
+        <td>Fraise ou foret à chanfreiner</td>
+        <td>Préparer la tête de vis proprement</td>
+      </tr>
+      <tr>
+        <td>Serre-joints</td>
+        <td>Maintien pendant assemblage</td>
+      </tr>
+      <tr>
+        <td>Papier abrasif grain 80 / 120 / 180</td>
+        <td>Ponçage de base et finition</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="photo-slot">
+    <strong>Photo recommandée 02 :</strong> vue à plat du matériel complet : bois débité, vis, colle, outils principaux.
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Avant de commencer</h2>
+  <div class="card">
+    <ol class="step-list">
+      <li>Travaillez sur une surface stable, plane et suffisamment dégagée.</li>
+      <li>Triez toutes les pièces et identifiez-les au crayon : <strong>P1 à P4</strong> pour les pieds, <strong>TH1 à TH4</strong> pour les traverses hautes, <strong>TB1 à TB4</strong> pour les traverses basses.</li>
+      <li>Choisissez, pour chaque pièce, la face la plus propre et orientez-la vers l’extérieur ou vers le dessus selon le cas.</li>
+      <li>Contrôlez toutes les longueurs avant assemblage. Une erreur de quelques millimètres suffit à créer un tabouret bancal.</li>
+      <li>Si vous découpez vous-même les éléments, faites toutes les coupes avant de commencer l’assemblage.</li>
+    </ol>
+
+    <div class="warn-box">
+      <strong>Règle clé :</strong>  
+      ne vissez jamais “pour voir”.  
+      Sur un petit projet, les erreurs de précipitation coûtent proportionnellement plus cher que sur un gros.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 03 :</strong> bois repéré au crayon, pièces rangées par type.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 1 — Préparer les pièces</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Obtenir un lot de pièces propre, lisible et prêt à être assemblé.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Vérifiez que les 4 pieds font bien <strong>432 mm</strong>.</li>
+      <li>Vérifiez que les 4 traverses hautes font bien <strong>200 mm</strong>.</li>
+      <li>Vérifiez que les 4 traverses basses font bien <strong>200 mm</strong>.</li>
+      <li>Vérifiez que l’assise mesure bien <strong>300 x 300 mm</strong>.</li>
+      <li>Poncez légèrement les coupes et les arêtes agressives avec un grain 80 puis 120.</li>
+      <li>Ne faites pas encore de finition complète : l’objectif ici est seulement d’enlever les échardes et irrégularités gênantes.</li>
+    </ol>
+
+    <h3 class="step-title">Contrôle</h3>
+    <ul class="checklist">
+      <li>Toutes les pièces sont identifiées</li>
+      <li>Aucune coupe grossière ne gêne l’assemblage</li>
+      <li>Les longueurs sont cohérentes</li>
+    </ul>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 04 :</strong> gros plan sur une pièce identifiée et légèrement poncée.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 2 — Tracer les repères sur les pieds</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Définir précisément la position des traverses hautes et basses.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Placez les 4 pieds côte à côte, dans le même sens.</li>
+      <li>Sur chaque pied, marquez le <strong>haut</strong> et le <strong>bas</strong>.</li>
+      <li>Sur les deux faces intérieures de chaque pied, tracez un repère à <strong>70 mm du haut</strong> : ce sera la ligne basse des traverses hautes.</li>
+      <li>Sur ces mêmes faces, tracez un repère à <strong>150 mm du bas</strong> : ce sera la ligne haute des traverses basses.</li>
+      <li>Vérifiez que les repères sont bien tracés sur les faces qui recevront les traverses, pas sur les faces extérieures visibles.</li>
+    </ol>
+
+    <h3 class="step-title">Contrôle</h3>
+    <ul class="checklist">
+      <li>Chaque pied a un haut et un bas identifiés</li>
+      <li>Les repères “traverses hautes” sont identiques sur les 4 pieds</li>
+      <li>Les repères “traverses basses” sont identiques sur les 4 pieds</li>
+    </ul>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 05 :</strong> gros plan sur un pied avec repères de position des traverses.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 3 — Pré-percer les assemblages des traverses hautes</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Préparer les assemblages sans fendre le bois ni forcer le vissage.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Prenez un premier pied.</li>
+      <li>Sur la face intérieure concernée, positionnez une traverse haute affleurante en haut du pied.</li>
+      <li>Tracez deux axes de vissage dans l’épaisseur de la traverse :
+        <ul>
+          <li>un à environ <strong>20 mm</strong> du bord supérieur de la traverse,</li>
+          <li>un à environ <strong>50 mm</strong> du bord supérieur.</li>
+        </ul>
+      </li>
+      <li>Percez dans le pied avec un foret de passage adapté, puis faites un léger fraisage pour noyer proprement la tête de vis.</li>
+      <li>Reproduisez l’opération pour toutes les positions de traverses hautes.</li>
+    </ol>
+
+    <div class="warn-box">
+      <strong>À éviter :</strong>  
+      percer au hasard, trop près du bord, ou sans vérifier l’alignement de la traverse.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 06 :</strong> pré-perçage d’un pied avec traverse haute positionnée à blanc.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 4 — Monter les deux premiers cadres latéraux</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Créer deux sous-ensembles latéraux propres et stables.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Prenez 2 pieds et 2 traverses hautes.</li>
+      <li>Positionnez les traverses hautes entre les deux pieds, affleurantes en haut, sur les faces intérieures prévues.</li>
+      <li>Appliquez un fin cordon de colle sur les extrémités des traverses.</li>
+      <li>Maintenez avec serre-joints si possible.</li>
+      <li>Vissez avec des vis <strong>4 x 50 mm</strong> sans forcer jusqu’à écraser le bois.</li>
+      <li>Ajoutez ensuite 2 traverses basses en respectant le repère tracé à <strong>150 mm du bas</strong>.</li>
+      <li>Répétez exactement la même chose pour constituer le deuxième cadre latéral.</li>
+    </ol>
+
+    <h3 class="step-title">Contrôle</h3>
+    <ul class="checklist">
+      <li>Les deux cadres latéraux se ressemblent</li>
+      <li>Les traverses hautes sont bien affleurantes en haut</li>
+      <li>Les traverses basses sont à la même hauteur sur chaque cadre</li>
+    </ul>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 07 :</strong> un cadre latéral assemblé vu à plat.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 5 — Relier les cadres latéraux entre eux</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Former la structure complète du tabouret.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Placez les deux cadres latéraux debout et parallèles.</li>
+      <li>Positionnez les 2 traverses hautes restantes entre les cadres, sur l’avant et l’arrière, en haut.</li>
+      <li>Collez légèrement les extrémités.</li>
+      <li>Maintenez, contrôlez, puis vissez.</li>
+      <li>Ajoutez ensuite les 2 traverses basses restantes, avant et arrière, au niveau de vos repères.</li>
+      <li>Vérifiez immédiatement que la structure ne vrille pas.</li>
+    </ol>
+
+    <div class="warn-box">
+      <strong>Point critique :</strong>  
+      si tu assembles cette étape sur un sol irrégulier ou sans contrôle d’équerrage, tu risques d’obtenir un tabouret bancal.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 08 :</strong> structure complète sans l’assise, vue 3/4.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 6 — Contrôler l’équerrage et la stabilité</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Corriger avant de poursuivre. Une erreur ici se répercute partout.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Posez la structure sur une surface plane.</li>
+      <li>Vérifiez que les 4 pieds touchent correctement le support.</li>
+      <li>Contrôlez les angles avec une équerre si possible.</li>
+      <li>Mesurez les diagonales du cadre supérieur :
+        <ul>
+          <li>si elles sont identiques, l’ensemble est globalement d’équerre ;</li>
+          <li>si elles diffèrent, corrigez en poussant légèrement la structure avant serrage définitif complet.</li>
+        </ul>
+      </li>
+      <li>Resserrez si nécessaire, sans écraser le bois.</li>
+    </ol>
+
+    <div class="success-box">
+      <strong>Bon signe :</strong>  
+      la structure tient debout, ne vrille pas visuellement et ne “danse” pas sur la surface de contrôle.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 09 :</strong> contrôle des diagonales ou contrôle d’équerrage.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 7 — Positionner et fixer l’assise</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Terminer le montage principal proprement.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Placez l’assise de <strong>300 x 300 mm</strong> sur la structure.</li>
+      <li>Centrez-la en laissant un débord régulier sur les quatre côtés.</li>
+      <li>Tracez discrètement le positionnement si nécessaire.</li>
+      <li>Pré-percez l’assise aux points de fixation :
+        <ul>
+          <li>2 points par côté, soit <strong>8 points</strong> au total,</li>
+          <li>éloignés des bords pour éviter les fentes.</li>
+        </ul>
+      </li>
+      <li>Fraisez légèrement les trous si vous voulez noyer la tête des vis.</li>
+      <li>Vissez avec des vis <strong>4 x 35 mm</strong> dans les traverses hautes.</li>
+    </ol>
+
+    <div class="warn-box">
+      <strong>À éviter :</strong>  
+      visser sans pré-perçage dans l’assise, surtout près des angles.
+    </div>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 10 :</strong> assise positionnée et pré-percée avant vissage final.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 8 — Ponçage final</h2>
+  <div class="card">
+    <h3 class="step-title">Objectif</h3>
+    <p>Obtenir un rendu plus propre, plus agréable au toucher et plus cohérent visuellement.</p>
+
+    <h3 class="step-title">Instructions exactes</h3>
+    <ol class="step-list">
+      <li>Poncez d’abord au grain <strong>80</strong> les zones irrégulières si besoin.</li>
+      <li>Passez ensuite au grain <strong>120</strong> sur l’ensemble.</li>
+      <li>Terminez au grain <strong>180</strong> sur l’assise et les zones les plus visibles si vous voulez un toucher plus propre.</li>
+      <li>Cassez légèrement les arêtes trop vives, surtout sur l’assise.</li>
+      <li>Dépoussiérez soigneusement.</li>
+    </ol>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 11 :</strong> ponçage de l’assise ou cassage léger des arêtes.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Étape 9 — Finition recommandée</h2>
+  <div class="card">
+    <p>La finition n’est pas obligatoire pour valider le projet, mais elle améliore nettement le rendu.</p>
+
+    <h3>Options simples</h3>
+    <ul class="checklist">
+      <li><strong>Huile bois :</strong> rendu naturel, simple à appliquer</li>
+      <li><strong>Vernis incolore :</strong> meilleure protection de surface</li>
+      <li><strong>Peinture :</strong> si le rendu décoratif prime sur l’aspect bois</li>
+    </ul>
+
+    <h3>Méthode minimale</h3>
+    <ol class="step-list">
+      <li>Dépoussiérer parfaitement</li>
+      <li>Appliquer la finition en couche fine</li>
+      <li>Laisser sécher selon la notice du produit</li>
+      <li>Égrener très légèrement entre couches si nécessaire</li>
+      <li>Poser 4 patins sous les pieds en fin de projet</li>
+    </ol>
+
+    <div class="photo-slot">
+      <strong>Photo recommandée 12 :</strong> application d’huile ou de vernis sur l’assise.
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Erreurs fréquentes à éviter</h2>
   <div class="grid cards">
-    <article class="card"><h3>Débutant prudent</h3><p>Pour celui qui veut être guidé étape par étape.</p></article>
-    <article class="card"><h3>Autonome progressif</h3><p>Pour celui qui veut construire un premier objet simple mais propre.</p></article>
-    <article class="card"><h3>Complément de formation</h3><p>Pour prolonger la formation Bricolage essentiel avec un support plus détaillé.</p></article>
+    <article class="card">
+      <h3>Couper sans recontrôler</h3>
+      <p>Une mauvaise cote de départ désorganise tout le projet.</p>
+    </article>
+    <article class="card">
+      <h3>Visser sans pré-perçage</h3>
+      <p>Le bois peut fendre, surtout sur les extrémités de traverses.</p>
+    </article>
+    <article class="card">
+      <h3>Assembler sans surface plane</h3>
+      <p>Le tabouret peut finir bancal même si les coupes sont correctes.</p>
+    </article>
+    <article class="card">
+      <h3>Ne pas contrôler l’équerrage</h3>
+      <p>Un léger vrillage devient très visible une fois l’assise posée.</p>
+    </article>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Guide photo recommandé</h2>
+  <div class="card">
+    <p>
+      Pour te démarquer commercialement, cette page ne doit pas rester “seulement textuelle”.
+      Le meilleur différenciant est un support visuel propre et pédagogique.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Sujet</th>
+          <th>Utilité</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Tabouret fini</td>
+          <td>Image d’accroche / projection résultat</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Matériel complet</td>
+          <td>Rassurer sur la simplicité du projet</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Pièces repérées</td>
+          <td>Montrer la préparation</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Ponçage initial / repères</td>
+          <td>Pédagogie de base</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Traçage sur un pied</td>
+          <td>Clarifier les repères</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>Pré-perçage</td>
+          <td>Étape critique souvent mal comprise</td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td>Cadre latéral monté</td>
+          <td>Visualiser le sous-ensemble</td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td>Structure complète</td>
+          <td>Montrer la logique du montage</td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td>Contrôle équerrage</td>
+          <td>Différenciation qualitative</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Pose de l’assise</td>
+          <td>Étape visible et valorisante</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Ponçage final</td>
+          <td>Montrer la finition</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Tabouret fini en situation</td>
+          <td>Projection client / rendu final</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <strong>À retenir :</strong>  
+      ce qui te démarquera le plus n’est pas uniquement “plus de texte”, mais :
+      <ul class="checklist">
+        <li>un déroulé plus pédagogique que la moyenne ;</li>
+        <li>des contrôles intermédiaires clairs ;</li>
+        <li>des erreurs fréquentes expliquées ;</li>
+        <li>des visuels propres et cohérents ;</li>
+        <li>une vraie logique débutant, pas un simple plan sec.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Ce produit est fait pour vous si…</h2>
+  <div class="grid cards">
+    <article class="card">
+      <h3>Vous voulez un vrai premier projet</h3>
+      <p>Pas juste un exercice abstrait, mais un objet simple et concret.</p>
+    </article>
+    <article class="card">
+      <h3>Vous voulez comprendre ce que vous faites</h3>
+      <p>Pas seulement suivre un plan, mais apprendre une logique.</p>
+    </article>
+    <article class="card">
+      <h3>Vous cherchez un support plus sérieux que la moyenne</h3>
+      <p>Plus guidé, plus structuré, plus pédagogique.</p>
+    </article>
   </div>
 </section>
 
 <section class="container section">
   <div class="card">
-    <h2>Deux usages possibles</h2>
+    <h2>Passer à la suite</h2>
+    <p>
+      Ce plan premium peut être utilisé seul comme produit de fabrication guidée,
+      ou intégré dans la formation <strong>Bricolage essentiel</strong>.
+    </p>
     <div class="cta">
-      <a class="btn primary" href="contact.html">Acheter le plan premium seul</a>
-      <a class="btn" href="formation-bricolage-essentiel.html">L'obtenir via la formation</a>
+      <a class="btn primary" href="formation-bricolage-essentiel.html">Voir la formation associée</a>
+      <a class="btn" href="offres-tarifs-bricolage.html">Comparer les formules</a>
+      <a class="btn" href="contact.html">Demander ce produit</a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="footer-grid">
-    <div><h4>aCaP' Copeaux</h4><p>Produit annexe premium : plan tabouret enrichi.</p></div>
-    <div><h5>Parcours</h5><p><a href="plan-tabouret-simple.html">Version simple</a><br><a href="formation-bricolage-essentiel.html">Formation complète</a></p></div>
-    <div><h5>Contact</h5><p><a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a><br><a href="tel:+33781353645">+33781353645</a></p></div>
+    <div>
+      <h4>aCaP' Copeaux</h4>
+      <p>Guides pratiques, formations concrètes et supports pensés pour des usages réels.</p>
+    </div>
+    <div>
+      <h5>Accès rapide</h5>
+      <p>
+        <a href="formation-bricolage-essentiel.html">Bricolage essentiel</a><br>
+        <a href="plan-tabouret-simple.html">Plan simple</a><br>
+        <a href="offres-tarifs-bricolage.html">Offres & tarifs</a>
+      </p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p>
+        <a href="mailto:acap.copeaux@gmail.com">acap.copeaux@gmail.com</a><br>
+        <a href="tel:+33781353645">+33781353645</a>
+      </p>
+    </div>
   </div>
 </footer>
-</body></html>
+
+</body>
+</html>
